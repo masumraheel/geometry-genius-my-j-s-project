@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Gem</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="md:m-4">
+    <header>
+
+    </header>
+    <main class="lg:container mx-auto space-y-4 md:space-x-4">
+        <div class="flex flex-col md:flex-row">
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+                <!-- triangle card -->
+                <div class="card md:w-80 lg:w-96 bg-base-100 shadow-md mb-4">
+                    <figure><img src="images/triangle.png" alt="Triangle" class="lg:w-60" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-center text-2xl font-semibold">Triangle</h2>
+                      <p class="text-center">Area (A) = 0.5 X b X h</p>
+                      <div class="text-center ">
+                        <input type="text" placeholder="b" id="triangale-base" class="w-24 border-2 border-gray-400 rounded-md pl-2">
+                        <span>cm</span>
+                        <input type="text" placeholder="h" id="triangle-height" class="w-24 border-2 border-gray-400 rounded-md pl-2">
+                        <span>cm</span>
+                      </div>
+                      <div class="text-center">
+                        <p class="text-2xl">Area: <span id="triangle-area"></span><span >cm<sup>2</sup></span></p>
+                      </div>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary w-full font-semibold" onclick="calculateTriangleArea()">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card md:w-80 lg:w-96 bg-base-100 shadow-md mb-4">
+                    <figure><img src="images/triangle.png" alt="Shoes" class="lg:w-60" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-center text-2xl font-semibold">Triangle</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary w-full font-semibold">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card md:w-80 lg:w-96 bg-base-100 shadow-md mb-4">
+                    <figure><img src="images/triangle.png" alt="Shoes" class="lg:w-60" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-center text-2xl font-semibold">Triangle</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary w-full font-semibold">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card md:w-80 lg:w-96 bg-base-100 shadow-md mb-4">
+                    <figure><img src="images/triangle.png" alt="Shoes" class="lg:w-60" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-center text-2xl font-semibold">Triangle</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary w-full font-semibold">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- area calculation center -->
+            <div class="md:w-60 lg:w-80 border-2 border-gray-400">
+                <h3 class="text-3xl font-bold">Area Calculation</h3>
+            </div>
+        </div>
+    </main>
+    <script src="js/tringle.js"></script>
+</body>
+</html>
