@@ -20,47 +20,59 @@
                     <div class="card-body">
                       <h2 class="text-center text-2xl font-semibold">Triangle</h2>
                       <p class="text-center">Area (A) = 0.5 X b X h</p>
-                      <div class="text-center ">
-                        <input type="text" placeholder="b" id="triangale-base" class="w-24 border-2 border-gray-400 rounded-md pl-2">
+                      <div class="text-center mb-8">
+                        <input type="text" placeholder="b" id="triangale-base" class="w-24 border-2 border-gray-400 rounded-md">
                         <span>cm</span>
-                        <input type="text" placeholder="h" id="triangle-height" class="w-24 border-2 border-gray-400 rounded-md pl-2">
+                        <input type="text" placeholder="h" id="triangle-height" class="w-24 border-2 border-gray-400 rounded-md">
                         <span>cm</span>
                       </div>
-                      <div class="text-center">
+                      <div class="text-center mb-4">
                         <p class="text-2xl">Area: <span id="triangle-area"></span><span >cm<sup>2</sup></span></p>
                       </div>
-                      <div class="card-actions justify-end">
+                      <div class="card-actions">
                         <button class="btn btn-primary w-full font-semibold" onclick="calculateTriangleArea()">Calculate</button>
                       </div>
                     </div>
                   </div>
+                <!-- Rectangle Card -->
                 <div class="card md:w-80 lg:w-96 bg-base-100 shadow-md mb-4">
-                    <figure><img src="images/triangle.png" alt="Shoes" class="lg:w-60" /></figure>
+                    <figure><img class src="images/rectangle.png" alt="Shoes" class="lg:w-60" /></figure>
                     <div class="card-body">
-                      <h2 class="text-center text-2xl font-semibold">Triangle</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary w-full font-semibold">Calculate</button>
+                      <h2 class="text-center text-2xl font-semibold">Rectangle</h2>
+                      <p class="text-center mb-0">Area (A) = w X l</p>
+                      <div class="text-center mb-8">
+                        <input type="text" id="rectengle-width" placeholder="w" class="w-24 border-2 border-bg-gray-400 rounded-md">
+                        <span class="lg:ml-2 mr-2">cm</span>
+                        <input type="text" id="rectengle-length" placeholder="I" class="w-24 border-2 border-bg-gray-400 rounded-md pl-2">
+                        <span class="lg:ml-2">cm</span>
+                      </div>
+                      <div class="text-center text-2xl lg:mb-4">
+                        <p>Area: <span id="rectangle-area"></span><span>cm<Sup>2</Sup></span>
+                        </p>
+                      </div>
+                      <div class="card-actions">
+                        <button class="btn btn-primary w-full font-semibold" onclick="calculateRectangleArea()">Calculate</button>
                       </div>
                     </div>
                   </div>
+                  <!-- paralellogram card -->
                 <div class="card md:w-80 lg:w-96 bg-base-100 shadow-md mb-4">
-                    <figure><img src="images/triangle.png" alt="Shoes" class="lg:w-60" /></figure>
+                    <figure><img class src="images/parallelogram.png" alt="parallelogram" class="lg:w-60" /></figure>
                     <div class="card-body">
-                      <h2 class="text-center text-2xl font-semibold">Triangle</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary w-full font-semibold">Calculate</button>
+                      <h2 class="text-center text-2xl font-semibold">Paralellogram</h2>
+                      <p class="text-center mb-0">Area (A) = b X h</p>
+                      <div class="text-center mb-8">
+                        <input type="text" id="paralellogram-base" placeholder="base" class="w-24 border-2 border-bg-gray-400 rounded-md">
+                        <span class="lg:ml-2 mr-2">cm</span>
+                        <input type="text" id="paralellogram-height" placeholder="height" class="w-24 border-2 border-bg-gray-400 rounded-md pl-2">
+                        <span class="lg:ml-2">cm</span>
                       </div>
-                    </div>
-                  </div>
-                <div class="card md:w-80 lg:w-96 bg-base-100 shadow-md mb-4">
-                    <figure><img src="images/triangle.png" alt="Shoes" class="lg:w-60" /></figure>
-                    <div class="card-body">
-                      <h2 class="text-center text-2xl font-semibold">Triangle</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary w-full font-semibold">Calculate</button>
+                      <div class="text-center text-2xl lg:mb-4">
+                        <p>Area: <span id="paralellogram-area"></span><span>cm<Sup>2</Sup></span>
+                        </p>
+                      </div>
+                      <div class="card-actions">
+                        <button class="btn btn-primary w-full font-semibold" onclick="calculateParalellogramArea()">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -72,5 +84,7 @@
         </div>
     </main>
     <script src="js/tringle.js"></script>
+    <script src="js/rectangle.js"></script>
+    <script src="js/paralellogram.js"></script>
 </body>
 </html>
